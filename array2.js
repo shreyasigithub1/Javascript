@@ -4,7 +4,7 @@ const student =[
     "Bobby",
     "Seema",
     "Alex",
-    "Sita"
+    "ita"
 ]
 
 slength=student.length;
