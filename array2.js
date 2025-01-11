@@ -15,8 +15,7 @@ console.log( `Roll no- ${i+1} : ${student[i]}`);
 
 //for -in loop
 for(let i in student){
-    console.log( `Roll no- ${Number
-        (i)+1} : ${student[i]}`);  
+    console.log( `Roll no- ${Number(i)+1} : ${student[i]}`);  
 }
 
 //for..of loop

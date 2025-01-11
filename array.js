@@ -44,3 +44,7 @@ console.log(ddIncludes);
 const teams2=["India","New Zealand"]
 const mergedTeams=teams.concat(teams2);
 console.log(mergedTeams);
+
+
+//arrays are not primitive data types they are objects.we can change the value of objects even if 
+//they are const.We can't change the value of primitive data type if they are const.
