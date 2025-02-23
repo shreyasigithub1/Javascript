@@ -1,0 +1,261 @@
+/* Imoporting the font */
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+/* Dark mode colors */
+
+:root {
+  --text-100: #ffffff;
+  --bg-100: #0f1c2e;
+  --bg-200: #1f2b3e;
+  --bg-300: #374357;
+}
+
+/* Light mode colors */
+  /* :root{
+   --text-100:#436578;
+   --bg-100:#fffefb;
+   --bg-200:#f5f4f1;
+   --bg-300:#b6ccd8;
+      
+  } */
+
+body {
+  background-color: var(--bg-100);
+  font-family: "Forum";
+  color: var(--text-100);
+}
+/* For the toggle */
+.toggle-input {
+  display: none;
+}
+
+/* Toggle container */
+.toggle-label {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+/* The toggle button (knob) */
+.toggle-label::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+/* Default text (Light) */
+.toggle-label::after {
+  content: "Dark";
+  position: absolute;
+  right: 12px;
+  color: black;
+  transition: all 0.3s;
+}
+
+/* Checked state */
+.toggle-input:checked + .toggle-label {
+  background: var(--bg-300);
+  color: white;
+}
+
+/* Move knob to right when checked */
+.toggle-input:checked + .toggle-label::before {
+  left: 23px;
+}
+
+/* Change text to "Dark" when checked */
+.toggle-input:checked + .toggle-label::after {
+  content: "Light";
+  color: white;
+}
+
+/* Header div containing heading and the toggle */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+/* The music icon */
+.fa-music {
+  font-size: 30px;
+}
+/* Music icon and the heading div */
+.application_name_heading {
+  display: flex;
+  color: var(--text-100);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+
+  gap: 20px;
+  color: var(--text-100);
+}
+
+.inside_divs {
+  background-color: var(--bg-200);
+  height: auto;
+
+  font-size: 20px;
+}
+.all_songs {
+  padding: 40px;
+  padding-left: 5px;
+}
+#songs {
+  margin-left: 10px;
+  width: 70px;
+}
+
+.name_of_the_song {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+#song_search {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 25px;
+  width: 60%;
+}
+/* song-cards */
+
+.song-card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-cards {
+  margin: 30px 0;
+  width: 80%;
+  background-color: var(--bg-300);
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.song-cards img {
+  width: 100%;
+  height: 70%;
+}
+
+/* Audio element */
+
+.song_audio {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.song_audio i {
+  font-size: 30px;
+}
+.audio_element {
+  width: 100%;
+}
+
+/* for add to playlist button */
+
+.add_to_playlist {
+  margin: 20px;
+  margin-top: 30px;
+  background-color: var(--bg-100);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.add_to_playlist h3 {
+  margin-left: 10px;
+}
+
+.playlist_inputs {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 50%;
+  height: 25px;
+}
+
+.show_playlist {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name_of_the_playlist {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+
+  margin-bottom: 5px;
+}
+
+.song-name {
+  flex-grow: 1;
+  color: var(--text-100);
+}
+
+.delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+#current_playlist {
+  text-align: center;
+}
+
+.selected-playlist {
+  background-color: var(--bg-100); 
+  color: var(--text-100); 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.fa-solid{
+  color:var(--text-100);
+}

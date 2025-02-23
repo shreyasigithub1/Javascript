@@ -6,10 +6,11 @@ function greetUser(userName,medium){
     console.log(`hello ${userName}! Welcome to the ${medium}`);
 }
 
+console.log(greetUser);
 //Invoking of a function
 
-greetUser("Rahul","app");
-greetUser("Riya","website");
+//greetUser("Rahul","app");
+//greetUser("Riya","website");
 
 function printDetail(name){
     console.log(`Name : ${name}`);
@@ -20,4 +21,4 @@ function calculateAge(birthYear){
     console.log( "Age - " + (2024- birthYear));
 }
 
-printDetail("Shreyasi");
+//printDetail("Shreyasi");
