@@ -10,6 +10,6 @@ for(let i of inputs){
     if(evenNumbers.length===5){
         break;
     }
-    console.log(evenNumbers);
+    //console.log(evenNumbers);
 }
 console.log(evenNumbers);

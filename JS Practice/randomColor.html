@@ -40,8 +40,26 @@
 </html>
 
 
-for(var i=0;i<5;i++){
+<!-- for(var i=0;i<5;i++){
     setTimeOut(function(){console.log(i);},1000);
 }for(var i=0;i<5;i++){
     setTimeOut(function(){console.log(i);},1000);
+} -->
+
+
+
+step1(){
+    step2(){
+        step3(){
+            
+        }
+    }
 }
+
+step1(() => {
+    step2(() => {
+        step3(() => {
+            console.log("All steps completed");
+        });
+    });
+});

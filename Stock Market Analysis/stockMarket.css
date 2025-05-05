@@ -1,0 +1,96 @@
+body {
+  background-color: #d0ebea;
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header h1 {
+  color: #263339;
+  text-align: center;
+}
+#mainDiv {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* border: 1px solid white; */
+  gap: 10px;
+}
+#chartDetails,
+#list {
+  height: auto;
+  border: 1px solid rgb(223, 232, 225);
+  background-color: #cdfaf6;
+}
+
+#chartDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#chart {
+  width: 100%;
+  height: auto;
+}
+#myChart {
+  height: 100% !important;
+  width: 100% !important;
+}
+#list {
+  display: flex;
+  flex-direction: row;
+}
+#bookValueDiv p,
+#profitDiv p {
+  all: unset;
+}
+#listButtonDiv,
+#bookValueDiv,
+#profitDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+  justify-content: space-evenly;
+  color: #263339;
+  font-size: 15px;
+}
+#listButtonDiv button {
+  background-color: #43a49b;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#summaryDiv {
+  margin-top: 50px;
+  margin-left: 10px;
+  color: #263339;
+  font-size: 18px;
+}
+
+#chartButtons {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap: 30px;
+  
+}
+.timeButton{
+    background-color: #43a49b;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 25px;
+  width:70px;
+  color:#263339;
+  font-size: 18px;
+}
+#summaryHeading span{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 20px;
+    width:80px;
+    border-radius: 10px;
+    text-align: center;
+    
+}

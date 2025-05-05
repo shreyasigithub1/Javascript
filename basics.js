@@ -74,7 +74,7 @@ console.log(Number(true));
 //Unary opearator that converts string into a number
 
 let a='123';
-console.log(+a);
+console.log(+a);//converting the string to number
 
 //parseInt()
 console.log(parseInt("133.75d"));

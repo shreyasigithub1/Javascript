@@ -4,9 +4,16 @@
 
 const inputs=[2,3,4,5,6,10];
 
-const sum=inputs.reduce((total,num,index) =>{
-    console.log(total,index);
-    return total +num;
-},0);
+
+const sum = inputs.reduce((acc, currentValue) => {
+    console.log(acc + currentValue);
+    return (acc + currentValue);
+}, 0);
+
+
+// const sum=inputs.reduce((total,num,index) =>{
+//     console.log(total,index);
+//     return total +num;
+// },0);
 
 console.log(sum);

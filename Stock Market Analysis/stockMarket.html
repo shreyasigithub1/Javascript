@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock market Analysis</title>
+    <link rel="stylesheet" href="stockMarket.css" />
+  </head>
+  <body>
+    <!-- cdn link for chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+    <header>
+      <h1>Stock Market Analysis</h1>
+    </header>
+    <main>
+      <div id="mainDiv">
+        <div id="chartDetails">
+          <div id="chart">
+            <canvas id="myChart"></canvas>
+            <div id="chartButtons"></div>
+        </div>
+          <div id="summaryDiv">
+            <div id="summaryHeading"></div>
+            <div id="summaryBody"></div>
+          </div>
+        </div>
+        <div id="list">
+
+            <div id="listButtonDiv"></div>
+            <div id="bookValueDiv"></div>
+            <div id="profitDiv"></div>
+        </div>
+      </div>
+    </main>
+   
+    <script src="stockMarket.js"></script>
+  </body>
+</html>

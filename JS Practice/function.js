@@ -40,7 +40,7 @@ function a(num1,num2 ){
     return num1 *num2;
 }
 c(a(5,6)) ;//passing the value here //Immediately invoking the function a and passing the value  
-//c(a); //Only passing the function here 
+c(a); //Only passing the function here 
 
 //3.Function can be returned from another function
 const d=function(param1){

@@ -13,12 +13,11 @@ function getDetails(id) {
   request.send();
 
   request.addEventListener("load", function () {
-    if (request.status === 404)
-      return;
+    if (request.status === 404) return;
     console.log(request.responseText);
     //console.log(typeof request.responseText);
     let Json_data = JSON.parse(request.responseText); //Converting string to object
-    //2console.log(typeof Json_data);//object
+    //console.log(typeof Json_data);//object
     // user_first_name.textContent = Json_data.firstName;
     // user_last_name.textContent = Json_data.lastName;
     // user_email.textContent = Json_data.email;
@@ -35,8 +34,7 @@ function getDetails(id) {
       //checking the status only after loading the request
       console.log(request2);
       console.log(request2.status); //404
-      if (request2.status === 404)
-        return;
+      if (request2.status === 404) return;
       console.log(request2.responseText);
       let Json_data = JSON.parse(request2.responseText); //Converting string to object
 
